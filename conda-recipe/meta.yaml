@@ -1,0 +1,24 @@
+package:
+  name: s_cam
+  version: "{{ load_setup_py_data().version }}"
+source:
+  path: ..
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - pyyaml
+
+build:
+  noarch: python
+  number: 0
+  entry_points:
+    - som_cam = som_cam.__main__:main
+
+about:
+  license: GPL-3.0-or-later
+  license_file: ../LICENSE
+  summary: "{{ load_setup_py_data().description }}"
+  description: "{{ load_setup_py_data().description }}"

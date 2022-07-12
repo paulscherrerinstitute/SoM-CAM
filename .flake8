@@ -1,0 +1,7 @@
+[flake8]
+exclude = .git,__pycache__
+# the settings below are taken from the documentation of the `black` code
+# formatting tool, to make black and flake8 work well together:
+# https://github.com/psf/black/blob/master/docs/the_black_code_style.md
+select = C,E,F,W,B,B950
+extend-ignore = E203, E501
