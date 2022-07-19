@@ -2,7 +2,7 @@
 # SoM-CAM
 
 
-[![Conda](https://img.shields.io/conda/pn/paulscherrerinstitute/som-cam?color=success)](https://anaconda.org/paulscherrerinstitute/gitutils) [![GitHub](https://img.shields.io/github/license/paulscherrerinstitute/gitutils)](https://github.com/paulscherrerinstitute/gitutils/blob/master/LICENSE)[![CI](https://github.com/paulscherrerinstitute/SoM-CAM/actions/workflows/main.yml/badge.svg)](https://github.com/paulscherrerinstitute/SoM-CAM/actions/workflows/main.yml) ![GitHub Release Date](https://img.shields.io/github/release-date/paulscherrerinstitute/som-cam) ![conda_publish](https://github.com/paulscherrerinstitute/SoM-CAM/actions/workflows/publish-conda-package.yml/badge.svg) 
+[![Conda](https://img.shields.io/conda/pn/paulscherrerinstitute/som_cam?color=success)](https://anaconda.org/paulscherrerinstitute/som_cam) [![GitHub](https://img.shields.io/github/license/paulscherrerinstitute/som-cam)](https://github.com/paulscherrerinstitute/som-cam/blob/master/LICENSE)[![CI](https://github.com/paulscherrerinstitute/SoM-CAM/actions/workflows/main.yml/badge.svg)](https://github.com/paulscherrerinstitute/SoM-CAM/actions/workflows/main.yml) [![GitHub Release Date](https://img.shields.io/github/release-date/paulscherrerinstitute/som-cam)](https://github.com/paulscherrerinstitute/SoM-CAM/releases) [![Upload Python Package](https://github.com/paulscherrerinstitute/SoM-CAM/actions/workflows/publish-conda-package.yml/badge.svg)](https://github.com/paulscherrerinstitute/SoM-CAM/actions/workflows/publish-conda-package.yml)
 
 
 SoM-CAM configuration tool
