@@ -19,12 +19,15 @@ from .utils import get_logger, update_logger
     help="Verbose level: DEBUG, INFO, WARNING, ERROR, CRITICAL",
 )
 def json_2_hw(input_file_name, verbose):
-    """Read and execute JSON hardware configuration"""
+    """ 
+    Reads an input json hardware configuration file and configures the hardware by setting the values to it.
+    
+    Examples:
+        >>> som_cam hw-2-json -i /<path>/<to>/input_file.json -o /<path/<to>/output_file_to_be_generated.json -v DEBUG
+    """
     update_logger(verbose)
     log = get_logger()
-    # The following code reads a JSON hardware configuration file. Every hardware object or circuit is configured by calling functions in the Python hw_access module.
-    # E.g. the current_bias is set by calling the set_current_bias function.
-    # Every hardware object requires a set_... function.
+
     try:
         log.info(f"Reading input configuration file {input_file_name}")
         with open(input_file_name, "r") as read_file:

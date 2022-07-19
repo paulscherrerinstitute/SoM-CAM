@@ -9,12 +9,14 @@ from .utils import get_logger, update_logger
 
 @click.command()
 @click.option(
-    "-i", "--input_file_name", help="JSON file containing the configurations"
+    "-i",
+    "--input_file_name",
+    help="The input json configuration file with the hardware details that should be read.",
 )
 @click.option(
     "-o",
     "--output_file_name",
-    help="Output JSON file name that hw configuration will be saved.",
+    help="The output json configuration file that will be generated containing the current hardware configuration.",
 )
 @click.option(
     "-v",
@@ -25,9 +27,15 @@ from .utils import get_logger, update_logger
     help="Verbose level: DEBUG, INFO, WARNING, ERROR, CRITICAL",
 )
 def hw_2_json(input_file_name, output_file_name, verbose):
-    """Generate JSON file"""
-    # The following code writes a JSON hardware configuration to a file.
-    # It utilizes the built-in json Python module to write a Python dictionary to a JSON file.
+    """
+    Reads an input json configuration file with the predefined configurations, reads the current configurations from the hardware and saves it into an output json file.
+    
+    Examples:
+    
+        >>> som_cam hw-2-json -i /<path>/<to>/input_file.json -v DEBUG
+
+    """
+
     update_logger(verbose)
     log = get_logger()
     # loads json configuration file
@@ -63,7 +71,3 @@ def hw_2_json(input_file_name, output_file_name, verbose):
     except IOError:
         error_msg = "Problem saving output json configuration file..."
         raise Exception(error_msg)
-
-    # with open(json_file, "r") as read_file:
-    #     configurations = json.load(read_file)
-
