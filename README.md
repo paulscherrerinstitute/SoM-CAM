@@ -2,13 +2,8 @@
 # SoM-CAM
 
 
+[![Conda](https://img.shields.io/conda/pn/paulscherrerinstitute/som-cam?color=success)](https://anaconda.org/paulscherrerinstitute/gitutils) [![GitHub](https://img.shields.io/github/license/paulscherrerinstitute/gitutils)](https://github.com/paulscherrerinstitute/gitutils/blob/master/LICENSE)[![CI](https://github.com/paulscherrerinstitute/SoM-CAM/actions/workflows/main.yml/badge.svg)](https://github.com/paulscherrerinstitute/SoM-CAM/actions/workflows/main.yml) ![GitHub Release Date](https://img.shields.io/github/release-date/paulscherrerinstitute/som-cam) ![conda_publish](https://github.com/paulscherrerinstitute/SoM-CAM/actions/workflows/publish-conda-package.yml/badge.svg) 
 
-[![codecov](https://codecov.io/gh/lhdamiani/SoM-CAM/branch/main/graph/badge.svg?token=SoM-CAM_token_here)](https://codecov.io/gh/lhdamiani/SoM-CAM)
-[![CI](https://github.com/lhdamiani/SoM-CAM/actions/workflows/main.yml/badge.svg)](https://github.com/lhdamiani/SoM-CAM/actions/workflows/main.yml)
-
-SoM-CAM configuration tool
-
-# Welcome to SoM-CAM documentation
 
 SoM-CAM configuration tool
 
@@ -99,9 +94,9 @@ init:             ## Initialize the project based on an application template.
 
 ## Contributors
 
-Ernst Johansen - ernst.johansen@psi.ch
-Leonardo Hax - leonardo.hax@psi.ch
-Tadej Humar - tadej.humar@psi.ch
-Thomas Jean Rossi - thomas.rossi1@psi.ch
+- Ernst Johansen - ernst.johansen@psi.ch
+- Leonardo Hax - leonardo.hax@psi.ch
+- Tadej Humar - tadej.humar@psi.ch
+- Thomas Jean Rossi - thomas.rossi1@psi.ch
 
 
