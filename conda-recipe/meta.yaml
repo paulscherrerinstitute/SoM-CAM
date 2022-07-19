@@ -11,8 +11,6 @@ requirements:
   run:
     - python
     - pyyaml
-    - json
-    - logging
 
 build:
   noarch: python
