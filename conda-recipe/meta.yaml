@@ -1,5 +1,5 @@
 package:
-  name: s_cam
+  name: som_cam
   version: "{{ load_setup_py_data().version }}"
 source:
   path: ..
@@ -7,9 +7,12 @@ requirements:
   build:
     - python
     - setuptools
+    - click
   run:
     - python
     - pyyaml
+    - json
+    - logging
 
 build:
   noarch: python

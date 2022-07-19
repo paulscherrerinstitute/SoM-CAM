@@ -17,4 +17,3 @@ jobs:
       with:
         subdir: 'conda-recipe'
         anacondatoken: ${{ secrets.ANACONDA_TOKEN }}
-        packagename: 'SoM-CAM'
