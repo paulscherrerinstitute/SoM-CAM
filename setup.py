@@ -1,6 +1,7 @@
 """Python setup.py for som_cam package"""
 import io
 import os
+
 from setuptools import find_packages, setup
 
 
@@ -33,7 +34,7 @@ setup(
     name="som_cam",
     version=read("som_cam", "VERSION"),
     description="SoM-CAM configuration tool",
-    url="https://github.com/lhdamiani/SoM-CAM/",
+    url="https://github.com/paulscherrerinstitute/SoM-CAM/",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     author="",

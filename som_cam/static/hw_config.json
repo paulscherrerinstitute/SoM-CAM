@@ -1,11 +1,11 @@
 {
-    "1":{
-        "object":"current_bias",
-        "unit":"pA",
-        "min":0.0,
-        "max":2500.0,
-        "default":100.0,
-        "settings":[
+    "1": {
+        "object": "current_bias",
+        "unit": "pA",
+        "min": 0.0,
+        "max": 2500.0,
+        "default": 100.0,
+        "settings": [
             100.0,
             100.0,
             100.0,
@@ -20,13 +20,13 @@
             100.0
         ]
     },
-    "2":{
-        "object":"voltage_bias",
-        "unit":"V",
-        "min":-100.0,
-        "max":100.0,
-        "default":0.0,
-        "settings":[
+    "2": {
+        "object": "voltage_bias",
+        "unit": "V",
+        "min": -100.0,
+        "max": 100.0,
+        "default": 0.0,
+        "settings": [
             0.0,
             0.0,
             0.0,
@@ -41,19 +41,19 @@
             0.0
         ]
     },
-    "3":{
-        "object":"bandwidth",
-        "unit":"kHz",
-        "min":2.0,
-        "max":200.0,
-        "default":10.0,
-        "set":[
+    "3": {
+        "object": "bandwidth",
+        "unit": "kHz",
+        "min": 2.0,
+        "max": 200.0,
+        "default": 10.0,
+        "set": [
             2.0,
             10.0,
             50.0,
             200.0
         ],
-        "settings":[
+        "settings": [
             10.0,
             10.0,
             10.0,
@@ -68,15 +68,13 @@
             10.0
         ]
     },
-    "4":{
-        "object":"matrix_level0",
-        "unit":"Enabled",
-        "min":0,
-        "max":1023,
-        "default":[
-            
-        ],
-        "settings":[
+    "4": {
+        "object": "matrix_level0",
+        "unit": "Enabled",
+        "min": 0,
+        "max": 1023,
+        "default": [],
+        "settings": [
             [
                 0,
                 20,
@@ -96,86 +94,44 @@
             [
                 1023
             ],
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ]
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
         ]
     },
-    "5":{
-        "object":"matrix_level1",
-        "unit":"Enabled",
-        "min":0,
-        "max":1023,
-        "default":[
-            
-        ],
-        "settings":[
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ],
-            [
-                
-            ]
+    "5": {
+        "object": "matrix_level1",
+        "unit": "Enabled",
+        "min": 0,
+        "max": 1023,
+        "default": [],
+        "settings": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
         ]
     },
-    "6":{
-        "object":"hv_out",
-        "unit":"V",
-        "min":0.0,
-        "max":300.0,
-        "default":0.0,
-        "settings":[
+    "6": {
+        "object": "hv_out",
+        "unit": "V",
+        "min": 0.0,
+        "max": 300.0,
+        "default": 0.0,
+        "settings": [
             0.0,
             0.0,
             0.0,
@@ -186,13 +142,13 @@
             0.0
         ]
     },
-    "7":{
-        "object":"hv_alarm_current",
-        "unit":"uA",
-        "min":0.0,
-        "max":1000.0,
-        "default":1000.0,
-        "settings":[
+    "7": {
+        "object": "hv_alarm_current",
+        "unit": "uA",
+        "min": 0.0,
+        "max": 1000.0,
+        "default": 1000.0,
+        "settings": [
             1000.0,
             1000.0,
             1000.0,
@@ -203,13 +159,13 @@
             1000.0
         ]
     },
-    "8":{
-        "object":"hv_alarm_volt_min",
-        "unit":"V",
-        "min":0.0,
-        "max":350.0,
-        "default":0.0,
-        "settings":[
+    "8": {
+        "object": "hv_alarm_volt_min",
+        "unit": "V",
+        "min": 0.0,
+        "max": 350.0,
+        "default": 0.0,
+        "settings": [
             0.0,
             0.0,
             0.0,
@@ -220,13 +176,13 @@
             0.0
         ]
     },
-    "9":{
-        "object":"hv_alarm_volt_max",
-        "unit":"V",
-        "min":0.0,
-        "max":350.0,
-        "default":350.0,
-        "settings":[
+    "9": {
+        "object": "hv_alarm_volt_max",
+        "unit": "V",
+        "min": 0.0,
+        "max": 350.0,
+        "default": 350.0,
+        "settings": [
             350.0,
             350.0,
             350.0,
@@ -235,6 +191,20 @@
             350.0,
             350.0,
             350.0
+        ]
+    },
+    "10": {
+        "object": "example_voltage",
+        "hostname": "XCZU6EG-AD82",
+        "username": "root",
+        "password": "root",
+        "config_path": "/tmp/som_cam_example_voltage.txt",
+        "unit": "V",
+        "min": -100.0,
+        "max": 100.0,
+        "default": 0.0,
+        "settings": [
+            10.0
         ]
     }
 }

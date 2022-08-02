@@ -39,8 +39,24 @@ def json_2_hw(input_file_name, verbose):
     for key, hw in configurations.items():
         index = 0
         log.debug(f"Key for this hw: { key }")
+        hostname = hw.get("hostname", None)
+        config_path = hw.get("config_path", None)
+        log.debug(f" ---->>>> Hostname: {hostname}")
         for value in hw["settings"]:
-            return_value = eval("set_" + hw["object"])(value, index)
+            if hostname and config_path:
+                cmd_str = (
+                    f'echo -n " {value } : { index} " > { config_path } \n'
+                )
+                return_value = eval("set_" + hw["object"])(
+                    cmd_str,
+                    # "cd /ioc/XCZU6EG-AD82/ && ls -l",
+                    hw.get("username", "root"),
+                    hw.get("password", "root"),
+                    hostname,
+                )
+            else:
+                return_value = eval("set_" + hw["object"])(value, index)
+
             if return_value == False:
                 log.critical(
                     f"Config { key} -> Problem setting configuration: { hw['object'] }"

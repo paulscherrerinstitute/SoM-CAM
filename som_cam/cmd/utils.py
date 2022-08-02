@@ -2,6 +2,8 @@
 
 import logging
 
+import paramiko
+
 logger = logging.getLogger(__name__)
 # create console handler and set level to debug
 ch = logging.StreamHandler()
@@ -13,6 +15,19 @@ formatter = logging.Formatter(
 ch.setFormatter(formatter)
 # add ch to logger
 logger.addHandler(ch)
+# ssh connection
+ssh = paramiko.SSHClient()
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+
+
+def remote_cmd(username, password, hostname, command):
+    # result = ssh.connect(hostname, 22, username=username, password=GetCreds(username), auth_timeout=30, look_for_keys=True)
+    ssh.connect(hostname, username=username, password=password, timeout=5)
+    stdin, stdout, stderr = ssh.exec_command(command, timeout=3, get_pty=True)
+
+    # stdin, stdout, stderr = ssh.exec_command('/sbin/ifconfig') -> simple exec ex.
+    return stdin, stdout, stderr
+    # return stdout.read().decode("utf-8")
 
 
 def get_logger():
