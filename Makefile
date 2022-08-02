@@ -32,6 +32,7 @@ lint:			## Run pep8, black, mypy linters.
 	$(ENV_PREFIX)black -l 79 --check som_cam/
 	$(ENV_PREFIX)black -l 79 --check tests/
 	$(ENV_PREFIX)mypy --ignore-missing-imports som_cam/
+	$(ENV_PREFIX)mypy --install-type
 
 .PHONY: pretty
 pretty: 
