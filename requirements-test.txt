@@ -4,6 +4,7 @@ coverage
 flake8
 black
 isort
+paramiko
 pytest-cov
 codecov
 mypy
