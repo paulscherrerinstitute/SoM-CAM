@@ -28,6 +28,7 @@ fmt:              ## Format code using black & isort.
 
 .PHONY: lint
 lint:			## Run pep8, black, mypy linters.
+	$(ENV_PREFIX)python -m pip install types-paramiko
 	$(ENV_PREFIX)flake8 som_cam/
 	$(ENV_PREFIX)black -l 79 --check som_cam/
 	$(ENV_PREFIX)black -l 79 --check tests/
