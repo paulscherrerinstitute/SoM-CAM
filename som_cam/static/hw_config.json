@@ -205,6 +205,7 @@
         "default": 0.0,
         "settings": [
             10.0
-        ]
+        ],
+        "description": "This is configuration settings of number 10, it describes the hw configuration of example_voltage, access rights, path to configuration in host machine, units, range and the value that should be used in settings."
     }
 }
