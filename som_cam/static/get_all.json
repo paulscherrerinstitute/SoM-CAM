@@ -1,6 +1,6 @@
 {
-    "hax-ESPRIMO-E920": {
-        "get_bandwidth": 32,
-        "get_voltage": 2
+    "XCZU6EG-AD82": {
+        "get_bandwidth": 10,
+        "get_voltage": 100
     }
 }

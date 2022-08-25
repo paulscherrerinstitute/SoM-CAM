@@ -37,9 +37,9 @@ setup(
     url="https://github.com/paulscherrerinstitute/SoM-CAM/",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
-    author="",
+    author="Paul Scherrer Institute (PSI)",
     packages=find_packages(exclude=["tests", ".github"]),
     install_requires=read_requirements("requirements.txt"),
-    entry_points={"console_scripts": ["som_cam = som_cam.__main__:main"]},
+    entry_points={"console_scripts": ["som = som_cam.som:main"]},
     extras_require={"test": read_requirements("requirements-test.txt")},
 )
